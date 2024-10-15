@@ -3,7 +3,8 @@ import ballerina/lang.runtime;
 
 service /hello on new http:Listener(8090) {
     resource function get greeting() returns string {
-        return "Hello, World!";
-        runtime:sleep(90);
+runtime:sleep(90);        
+return "Hello, World!";
+        
     }
 }
